@@ -58,6 +58,8 @@ font-size: var(--tamanho-fonte);
 
 .subject{
 display: flex;
+justify-content: space-between;
+align-items: center;
 }
 
 .subject1{
@@ -65,9 +67,7 @@ display: flex;
     color: var(--cor-fonte);
     font-weight: bold;
     width: 60%;
-    text-align: center;
-    padding: 5% 0 0 10%;
-    align-items: center;
+    padding: 5% 0 0 5%;
 }
 
 .subject2{
@@ -75,7 +75,6 @@ display: flex;
     color: var(--cor-fonte);
     align-items: center;
     width: 40%;
-    padding: 10% 10% 0 5%;
-    text-align: left;
+    padding: 5% 0 0 5%;
 }
 
