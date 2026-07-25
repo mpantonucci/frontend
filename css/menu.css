@@ -1,0 +1,4 @@
+p {
+    font-size: var(--tamanho-fonte);
+    color: var(--cor-fonte);
+}

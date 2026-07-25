@@ -1,0 +1,35 @@
+ :root {
+    --cor-fonte: #515643;
+    --tamanho-fonte: 30px;
+}
+
+a {
+    color: #4ca10b;
+
+}
+
+a:hover, p:hover {
+    color: #fe0909;
+    text-decoration: none;
+}
+
+.acesso{
+    color: #bc14e1
+}
+
+.seta {
+    text-decoration: none;}
+
+.seta::after{
+    content: ":)";
+    align-content: center;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.seta:hover::after{
+    color:aqua;
+    content: ";(";
+    padding-left: 10px;
+    margin-left: 10px;
+}
