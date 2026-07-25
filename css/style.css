@@ -67,7 +67,7 @@ align-items: center;
     color: var(--cor-fonte);
     font-weight: bold;
     width: 60%;
-    padding: 5% 0 0 5%;
+    padding: 5% 0 0 20%;
 }
 
 .subject2{
@@ -75,6 +75,6 @@ align-items: center;
     color: var(--cor-fonte);
     align-items: center;
     width: 40%;
-    padding: 5% 0 0 5%;
+    padding: 5% 0 0 20%;
 }
 
