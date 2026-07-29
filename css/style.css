@@ -36,16 +36,14 @@ ul.submenu{
     padding: 2% 2%;
     }
 
-
-     @media screen and (max-width: 576px) {
-        .cibo-container{
-            max-width: 540px;
-            margin: auto;
-        } 
-
-        h1{
-            font-size: var(--cor-fonte) * 0.5;
+     h1{ 
+            font-size: 1.5rem; 
+            color: var(--main-80);
         }
+
+    .submenu > .item:not(.btn-hamburguer){
+        border: 1px solid;
+        display: none;
     }
     
     @media screen and (min-width: 576px) {
@@ -53,6 +51,11 @@ ul.submenu{
             max-width: 540px;
             margin: auto;
         } 
+
+         h1{
+            width: 100%; 
+            font-size: 2rem; 
+        }
     }
 
    @media screen and (min-width: 768px) {
@@ -60,6 +63,12 @@ ul.submenu{
         max-width: 720px;
         margin: auto;
     } 
+
+     .submenu > .item:not(.btn-hamburguer){
+        border: 1px solid;
+        display: block;
+    }
+    
 }
 
    @media screen and (min-width: 992px) {
@@ -134,5 +143,5 @@ justify-content: space-between;
 }
 
 .centro-img{
-width: 80%;
+width: 100%;
 }
