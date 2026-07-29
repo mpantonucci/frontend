@@ -8,15 +8,7 @@
         *{
             padding: 0;
             margin: 0;
-            box-sizing: border-box;
-        }
-        div[class^=c]  {
-            width: 20%;
-            background-color: #6600ff;
-            width: 100px;
-            height: 100px;
-            color: white;
-            text-align: center;
+            /* box-sizing: border-box; */
         }
         .box {
             display: flex;
@@ -24,11 +16,41 @@
             flex-wrap:wrap;
             width: 100%;
             height: 500px;
+            align-content: flex-start;
+            flex-direction: reverse;
+            gap: 10px;
         }
+        div[class^=c]  {
+            background-color: #6600ff;
+            width: 200px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            flex-shrink: 0;
+            font-size: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /*Trabalhando com Media Queries*/
+        /*maior ou igual a 700px*/
+        @media screen and (min-width: 700px) {
+            .media {
+                background-color: red;
+                color: white;
+                font-size: 30px;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <div class="box" >
+    <!--Trabalhando com Media Queries-->
+    <div class="media">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, distinctio.</div>
+
+
+    <!-- <div class="box" >
         <div class="c1">1</div>
         <div class="c2">2</div>
         <div class="c3">3</div>
@@ -37,7 +59,8 @@
         <div class="c6">6</div>
         <div class="c7">7</div>
 
-    </div>
+    </div> -->
+
     
 </body>
 </html>
