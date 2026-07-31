@@ -31,4 +31,20 @@ if (salario < 1000) {
 console.log(confirmar);
  */
 
-alert ("Olá mundo!!");
+//alert ("Olá mundo!!");
+
+var nomeAluno = prompt("Digite o nome do aluno:");
+
+var nota1 = Number(prompt("Digite a primeira nota do aluno:"));
+var nota2 = Number(prompt("Digite a segunda nota do aluno:"));
+var nota3 = Number(prompt("Digite a terceira nota do aluno:"));
+var media = (nota1 + nota2 + nota3) / 3;
+ 
+if (media >= 6) {
+    alert(`Aluno ${nomeAluno} foi aprovado com a média ${media}!`);
+}else if (media >= 5) {
+    alert(`Aluno ${nomeAluno} está em recuperação com a média ${media}!`);
+}else{
+    alert(`Aluno ${nomeAluno} foi reprovado!`);
+}
+
