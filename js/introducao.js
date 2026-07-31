@@ -42,8 +42,6 @@ var media = (nota1 + nota2 + nota3) / 3;
  
 if (media >= 6) {
     alert(`Aluno ${nomeAluno} foi aprovado com a média ${media}!`);
-}else if (media >= 5) {
-    alert(`Aluno ${nomeAluno} está em recuperação com a média ${media}!`);
 }else{
     alert(`Aluno ${nomeAluno} foi reprovado!`);
 }
