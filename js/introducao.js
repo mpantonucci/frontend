@@ -1,4 +1,4 @@
-console.log("Olá, mundo!");
+/* console.log("Olá, mundo!");
 
 
 var salarioBruto = 2000;
@@ -8,7 +8,7 @@ var nomeFuncionario = "Paula";
 var mensagem = "O funcionário " + nomeFuncionario + " tem um salário líquido de R$ " + salarioLiquido + ". O salário bruto é de R$ " + salarioBruto + ".";
 var mensagem2 = `O funcionário ${nomeFuncionario} tem um salário líquido de R$ ${salarioLiquido}. O salário bruto é de R$ ${salarioBruto}.`;
 
-/* console.log(mensagem);
+/* console.log(mensagem); 
 console.log(mensagem2);
 
 
@@ -33,31 +33,60 @@ console.log(confirmar);
 
 //alert ("Olá mundo!!");
 
-var nomeAluno = prompt("Digite o nome do aluno:");
-
-var nota1 = Number(prompt("Digite a primeira nota do aluno:"));
-var nota2 = Number(prompt("Digite a segunda nota do aluno:"));
-var nota3 = Number(prompt("Digite a terceira nota do aluno:"));
-var media = (nota1 + nota2 + nota3) / 3;
- 
-
-var verBoletim = confirm("Deseja visualizar o boletim?");
-
-var situacao = media >= 6 ? "Aprovado" : "Reprovado";
-
-if (verBoletim) {
-    var mensagem = "=====================================\n";
-    mensagem += "Boletim do aluno\n";
-    mensagem += "Nome: " + nomeAluno + "\n";
-    mensagem += "Nota 1: " + nota1 + "\n";
-    mensagem += "Nota 2: " + nota2 + "\n";
-    mensagem += "Nota 3: " + nota3 + "\n";
-    mensagem += "Média: " + media + "\n";
-    mensagem += "Situacao: " + situacao + "\n";
-    mensagem += "=====================================\n";
-    alert(mensagem);
-    log.console(mensagem);
-}else{
-    alert("Operação cancelada.");
-    log.console("Operação cancelada.");
+function soma(valor, funcao1, funcao2){
+    var resultado = Number(valor) + 10;
+    funcao1(resultado);
+    funcao2(resultado);
 }
+
+
+function funcao1(valor){
+    alert(Number(valor) + 10);
+}
+
+function funcao2(valor){
+    alert(Number(valor) + 11);
+}
+
+soma(10, funcao1, funcao2);
+
+/* 
+
+function mediaNota(nota1, nota2, nota3){
+    var media = (nota1 + nota2 + nota3) / 3;
+    return media;
+}
+
+function boletim(){
+    var nomeAluno = prompt("Digite o nome do aluno:");
+
+    var nota1 = Number(prompt("Digite a primeira nota do aluno:"));
+    var nota2 = Number(prompt("Digite a segunda nota do aluno:"));
+    var nota3 = Number(prompt("Digite a terceira nota do aluno:"));
+    var media = mediaNota(nota1, nota2, nota3);
+    
+
+    var verBoletim = confirm("Deseja visualizar o boletim?");
+
+    var situacao = media >= 6 ? "Aprovado" : "Reprovado";
+
+    if (verBoletim) {
+        var mensagem = "=====================================\n";
+        mensagem += "Boletim do aluno\n";
+        mensagem += "Nome: " + nomeAluno + "\n";
+        mensagem += "Nota 1: " + nota1 + "\n";
+        mensagem += "Nota 2: " + nota2 + "\n";
+        mensagem += "Nota 3: " + nota3 + "\n";
+        mensagem += "Média: " + media + "\n";
+        mensagem += "Situacao: " + situacao + "\n";
+        mensagem += "=====================================\n";
+        alert(mensagem);
+        log.console(mensagem);
+    }else{
+        alert("Operação cancelada.");
+        log.console("Operação cancelada.");
+    }
+}
+
+
+boletim(); */
